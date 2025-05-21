@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Safe Spend</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <div class="container-principal">
+        <div class="formulario">
+            <form id="form-cadastro" onsubmit="cadastrar(event)">
+                <h3>Cadastro</h3>
+
+                <input type="text" placeholder="Nome completo" id="nome" required />
+                <input type="email" placeholder="E-mail" id="email" required />
+                <input type="text" placeholder="Usuário" id="usuario" required minlength="3" maxlength="15" />
+                <input type="password" placeholder="Senha" id="senha" required minlength="4" maxlength="15" />
+                <input type="password" placeholder="Confirmar senha" id="confirmar-senha" required minlength="4" maxlength="15" />
+                <input type="tel" placeholder="Celular (opcional)" id="celular" />
+
+                <input type="submit" value="Cadastrar" />
+                <p><a href="/html/login.html">Já tem uma conta? Faça login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function cadastrar(event) {
+            event.preventDefault();
+
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmar-senha').value;
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem. Tente novamente.');
+                return;
+            }
+
+            alert('Cadastro realizado com sucesso!');
+            window.location.href = "/html/login.html";
+        }
+    </script>
+</body>
+</html>

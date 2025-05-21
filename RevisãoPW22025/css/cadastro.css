@@ -1,0 +1,86 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #d6d6d6; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.formulario {
+    background-color: #3a3a3a; 
+    padding: 95px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+form h3 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; 
+    font-family: 'Arial Black', Arial, sans-serif; 
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #c62828;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #eeeeee;
+    color: #333;
+}
+
+input:focus {
+    border-color: #a91f1f;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 108%;
+    padding: 14px;
+    margin: 12px 0;
+    background-color: #c62828;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a91f1f;
+}
+
+
+.formulario p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.formulario p a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form p a:hover {
+    color: #a91f1f;
+}
+  

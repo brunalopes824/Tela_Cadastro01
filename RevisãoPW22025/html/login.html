@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Tela de Login</title>
+       
+        <meta charset="UTF-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="/css/login.css">   
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </head>
+    <body>
+        <div class="container-principal">
+            <div class="formulario">
+                <form id="form-login" onsubmit="logar(event)">
+                    <h3>login</h3>
+                
+                    <input type="text" placeholder="Usuário:" id="usuario" required="true" minlength="3" maxlength="15"/>
+
+                    <input type="password" placeholder="Senha:" id="senha" required="true" minlength="4" maxlength="15"/>
+                    
+                    
+                    <input type="submit" value="Entrar"/>
+                    
+                    
+                    <p><a href="/html/cadastro.html">Não tem conta? Cadastre-se</a></p>
+                </form>
+            </div>
+        </div>
+
+        <script src="/JavaScript/logar.js"></script>
+    </body>
+</html>
